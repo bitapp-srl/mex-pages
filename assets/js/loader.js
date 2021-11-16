@@ -16,6 +16,10 @@ var loader = function loader() {
         var now = new Date();
         var diffMs = (time - now); // milliseconds between now & departure
         var diffMins = Math.floor(diffMs / 60000); // minutes
+
+        if (diffMins < 0) {
+            diffMins = 0;
+        }
         
         $('#time_it').html(diffMins + ' min');
         $('#time_en').html(diffMins + ' min');
