@@ -30,4 +30,4 @@ var loader = function loader() {
 }
 
 loader();
-setInterval(loader, 15 * 1000);
+setInterval(loader, 5 * 1000);
