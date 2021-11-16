@@ -15,7 +15,7 @@ var loader = function loader() {
         
         var now = new Date();
         var diffMs = (time - now); // milliseconds between now & Christmas
-        var diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
+        var diffMins = Math.floor(diffMs / 60000); // minutes
         
         $('#time_it').html(diffMins + ' min');
         $('#time_en').html(diffMins + ' min');
